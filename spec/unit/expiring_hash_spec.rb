@@ -23,7 +23,6 @@ describe ExpiringHash do
 
     default_hash.delete_if {|k,v| v == 1}
     expect(default_hash).to eq({:qwer => 2})
-    binding.pry
   end
 
   describe 'expiration' do
